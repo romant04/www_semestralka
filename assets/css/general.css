@@ -1,0 +1,20 @@
+html {
+  font-family: Nunito, sans-serif;
+  height: 100%;
+  overflow: auto;
+  scroll-behavior: smooth;
+  color: white;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: Merriweather, serif;
+}
+
+body {
+  background-color: var(--bg-primary);
+}

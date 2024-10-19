@@ -1,0 +1,13 @@
+:root {
+  --bg-primary: #2c2f38;
+  --bg-dark: #212429;
+  --primary: #1a830a;
+  --primary-100: #82fb6f;
+  --secondary: #f38d4e;
+
+  --font-xs: 0.75rem;
+  --font-sm: 0.875rem;
+  --font-base: 1rem;
+  --font-md: 1.5rem;
+  --font-lg: 2rem;
+}
