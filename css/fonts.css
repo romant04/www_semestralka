@@ -3,42 +3,42 @@
   font-family: "Nunito";
   font-style: normal;
   font-weight: 300;
-  src: url("../fonts/Nunito/Nunito-Light.ttf") format("truetype");
+  src: url("../assets/fonts/Nunito/Nunito-Light.ttf") format("truetype");
 }
 @font-face {
   font-display: swap;
   font-family: "Nunito";
   font-style: normal;
   font-weight: 400;
-  src: url("../fonts/Nunito/Nunito-Regular.ttf") format("truetype");
+  src: url("../assets/fonts/Nunito/Nunito-Regular.ttf") format("truetype");
 }
 @font-face {
   font-display: swap;
   font-family: "Nunito";
   font-style: normal;
   font-weight: 500;
-  src: url("../fonts/Nunito/Nunito-Medium.ttf") format("truetype");
+  src: url("../assets/fonts/Nunito/Nunito-Medium.ttf") format("truetype");
 }
 @font-face {
   font-display: swap;
   font-family: "Nunito";
   font-style: normal;
   font-weight: 600;
-  src: url("../fonts/Nunito/Nunito-SemiBold.ttf") format("truetype");
+  src: url("../assets/fonts/Nunito/Nunito-SemiBold.ttf") format("truetype");
 }
 @font-face {
   font-display: swap;
   font-family: "Nunito";
   font-style: normal;
   font-weight: 700;
-  src: url("../fonts/Nunito/Nunito-Bold.ttf") format("truetype");
+  src: url("../assets/fonts/Nunito/Nunito-Bold.ttf") format("truetype");
 }
 @font-face {
   font-display: swap;
   font-family: "Nunito";
   font-style: italic;
   font-weight: 400;
-  src: url("../fonts/Nunito/Nunito-Italic.ttf") format("truetype");
+  src: url("../assets/fonts/Nunito/Nunito-Italic.ttf") format("truetype");
 }
 
 @font-face {
@@ -46,12 +46,14 @@
   font-family: "Merriweather";
   font-style: normal;
   font-weight: 400;
-  src: url("../fonts/Merriweather/Merriweather-Regular.ttf") format("truetype");
+  src: url("../assets/fonts/Merriweather/Merriweather-Regular.ttf")
+    format("truetype");
 }
 @font-face {
   font-display: swap;
   font-family: "Merriweather";
   font-style: normal;
   font-weight: 700;
-  src: url("../fonts/Merriweather/Merriweather-Bold.ttf") format("truetype");
+  src: url("../assets/fonts/Merriweather/Merriweather-Bold.ttf")
+    format("truetype");
 }

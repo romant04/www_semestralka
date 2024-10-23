@@ -1,0 +1,122 @@
+/*
+  HP - HERO
+*/
+.hp-hero {
+  position: relative;
+  width: 100%;
+  height: calc(100vh - 5.625rem);
+  padding-top: 2.5rem;
+  padding-inline: 4.375rem;
+}
+.hp-hero video {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  width: 100%;
+  height: 100%;
+  filter: brightness(60%);
+  object-fit: cover;
+}
+
+.hp-hero h1 {
+  font-size: 6rem;
+  font-weight: bold;
+  line-height: 110%;
+  position: relative;
+  z-index: 10;
+}
+.hp-hero h3 {
+  color: var(--primary-100);
+  font-size: 2.25rem;
+  max-width: 40vw;
+  position: relative;
+  z-index: 10;
+}
+
+.hp-hero a {
+  color: var(--primary-100);
+  font-size: var(--font-md);
+  text-transform: uppercase;
+  letter-spacing: 0.2em;
+  position: absolute;
+  bottom: 3rem;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+/*
+  HP - GAMES
+*/
+.game-container {
+  padding-top: 5rem;
+  padding-inline: 5rem;
+  scroll-margin-top: -2rem;
+  max-width: 90rem;
+  margin-inline: auto;
+}
+.game-container h2 {
+  font-size: var(--font-xl);
+  font-weight: bold;
+}
+.game-container p {
+  max-width: 35rem;
+  font-size: var(--font-md);
+}
+
+.game-cards {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  justify-content: center;
+  margin-top: 3.5rem;
+  column-gap: 3rem;
+  row-gap: 2.5rem;
+}
+
+.game-card-wrapper {
+  perspective: 1000px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.game-card {
+  width: 23.75rem;
+  cursor: pointer;
+  position: relative;
+  overflow: hidden;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+  transition: transform 0.1s ease-in-out, box-shadow 0.1s ease-in-out;
+  transform-style: preserve-3d;
+}
+.game-card:hover {
+  box-shadow: 0 16px 32px rgba(0, 0, 0, 0.2);
+}
+.game-card .game-info {
+  padding-inline: 1.25rem;
+  padding-top: 1.25rem;
+  padding-bottom: 1rem;
+  height: 12.5rem;
+  background-color: var(--bg-dark);
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+
+  display: flex;
+  flex-direction: column;
+}
+.game-card .game-info p {
+  font-size: var(--font-sm);
+}
+.game-card h3 {
+  font-size: var(--font-2lg);
+}
+.game-card img {
+  width: 100%;
+  height: 16.25rem;
+  object-fit: cover;
+}
+.game-card .game-info .tags {
+  margin-top: auto;
+  display: inline-flex;
+  gap: 0.25rem;
+  font-size: var(--font-xs);
+}

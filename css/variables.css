@@ -1,0 +1,21 @@
+:root {
+  --bg-primary: #2c2f38;
+  --bg-dark: #212429;
+  --bg-dark-active: #1b1e24;
+  --primary: #1a830a;
+  --primary-active: #28aa14;
+  --primary-100: #82fb6f;
+  --secondary: #db6115;
+  --secondary-active: #fb7623;
+  --secondary-100: #ff9857;
+  --text-gray: #c5c5c5;
+  --text-gray-active: #e3e3e3;
+
+  --font-xs: 0.75rem;
+  --font-sm: 0.875rem;
+  --font-base: 1rem;
+  --font-md: 1.5rem;
+  --font-lg: 2rem;
+  --font-2lg: 2.25rem;
+  --font-xl: 3.25rem;
+}

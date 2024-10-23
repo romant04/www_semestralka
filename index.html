@@ -1,10 +1,14 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <link rel="stylesheet" href="./assets/css/main.css" />
-    <link rel="stylesheet" href="./assets/css/HP/hp.css" />
+    <link rel="stylesheet" href="./css/main.css" />
+    <link rel="stylesheet" href="./css/HP/hp.css" />
 
+    <script src="./js/tilt-animation.js" defer></script>
+
+    <link rel="icon" type="image/x-icon" href="./assets/images/favicon.ico" />
     <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Duelovky</title>
   </head>
   <body>
@@ -22,7 +26,7 @@
       </nav>
     </header>
     <main>
-      <div class="hp-hero">
+      <section class="hp-hero">
         <h1>Duelovky</h1>
         <h3>Klasické deskové hry, všechny na jednom místě</h3>
         <video
@@ -30,10 +34,159 @@
           loop
           autoplay
           muted
+          poster="./assets/images/hp-hero-poster.jpg"
         ></video>
 
-        <a href="obsah">Prozkoumat</a>
-      </div>
+        <a href="#obsah">Prozkoumat</a>
+      </section>
+
+      <section class="game-container" id="obsah">
+        <h2>Online hry</h2>
+        <p>
+          Hrej online proti ostatním lidem a nebo vyzvi své kamarády na duel
+        </p>
+        <div class="game-cards">
+          <div class="game-card-wrapper">
+            <div class="game-card">
+              <img src="https://placehold.co/600x400" alt="" />
+              <div class="game-info">
+                <h3>Slovní fotbal</h3>
+                <p>
+                  Utkej se společeně se svým protihráčem ve hře, která prověří
+                  vaší slovní zásobu a otestuje vaše oči. Kdo dokáže sestavit
+                  více slov než vyprší čas ?
+                </p>
+                <p class="tags">
+                  <span class="text-primary">#Hra se slovy</span
+                  ><span class="text-secondary">#Logické</span>
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <div class="game-card-wrapper">
+            <div class="game-card">
+              <img src="https://placehold.co/600x400" alt="" />
+              <div class="game-info">
+                <h3>Slovní fotbal</h3>
+                <p>
+                  Utkej se společeně se svým protihráčem ve hře, která prověří
+                  vaší slovní zásobu a otestuje vaše oči. Kdo dokáže sestavit
+                  více slov než vyprší čas ?
+                </p>
+                <p class="tags">
+                  <span class="text-primary">#Hra se slovy</span
+                  ><span class="text-secondary">#Logické</span>
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <div class="game-card-wrapper">
+            <div class="game-card">
+              <img src="https://placehold.co/600x400" alt="" />
+              <div class="game-info">
+                <h3>Slovní fotbal</h3>
+                <p>
+                  Utkej se společeně se svým protihráčem ve hře, která prověří
+                  vaší slovní zásobu a otestuje vaše oči. Kdo dokáže sestavit
+                  více slov než vyprší čas ?
+                </p>
+                <p class="tags">
+                  <span class="text-primary">#Hra se slovy</span
+                  ><span class="text-secondary">#Logické</span>
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <div class="game-card-wrapper">
+            <div class="game-card">
+              <img src="https://placehold.co/600x400" alt="" />
+              <div class="game-info">
+                <h3>Slovní fotbal</h3>
+                <p>
+                  Utkej se společeně se svým protihráčem ve hře, která prověří
+                  vaší slovní zásobu a otestuje vaše oči. Kdo dokáže sestavit
+                  více slov než vyprší čas ?
+                </p>
+                <p class="tags">
+                  <span class="text-primary">#Hra se slovy</span
+                  ><span class="text-secondary">#Logické</span>
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <div class="game-card-wrapper">
+            <div class="game-card">
+              <img src="https://placehold.co/600x400" alt="" />
+              <div class="game-info">
+                <h3>Slovní fotbal</h3>
+                <p>
+                  Utkej se společeně se svým protihráčem ve hře, která prověří
+                  vaší slovní zásobu a otestuje vaše oči. Kdo dokáže sestavit
+                  více slov než vyprší čas ?
+                </p>
+                <p class="tags">
+                  <span class="text-primary">#Hra se slovy</span
+                  ><span class="text-secondary">#Logické</span>
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
     </main>
+
+    <footer>
+      <section class="links">
+        <div class="link-group">
+          <h4>Populární hry</h4>
+          <ul>
+            <li><a href="#">Slovní fotbal</a></li>
+            <li><a href="#">Horolezci</a></li>
+            <li><a href="#">Prší</a></li>
+            <li><a href="#">Chat</a></li>
+          </ul>
+        </div>
+        <div class="link-group">
+          <h4>Můj účet</h4>
+          <ul>
+            <li><a href="#">Přihlášení</a></li>
+            <li><a href="#">Registrace</a></li>
+            <li><a href="#">Přátelé</a></li>
+            <li><a href="#">Chat</a></li>
+          </ul>
+        </div>
+        <div class="link-group">
+          <h4>Kontaktujte nás</h4>
+          <ul>
+            <li>+420 630 520 710</li>
+            <li><a href="#">info@duelovky.cz</a></li>
+          </ul>
+        </div>
+        <div class="spacer"></div>
+        <div class="link-group">
+          <h4>Narazili jste na bug ?</h4>
+          <form>
+            <div class="form-group">
+              <label for="email">E-mail</label>
+              <input id="email" name="email" type="email" />
+            </div>
+            <div class="form-group">
+              <label for="bug">Popis bugu</label>
+              <textarea id="bug" name="bug" rows="3"></textarea>
+            </div>
+            <button class="button secondary">Náhlasit bug</button>
+          </form>
+        </div>
+      </section>
+      <section class="copyright">
+        <h2>Duelovky</h2>
+        <!--TODO: Add social links-->
+        <p>&copy; Copyright - Roman Tarnai 2024</p>
+      </section>
+    </footer>
   </body>
 </html>
