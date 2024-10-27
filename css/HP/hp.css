@@ -36,7 +36,7 @@
 
 .hp-hero a {
   color: var(--primary-100);
-  font-size: var(--font-md);
+  font-size: var(--font-2md);
   text-transform: uppercase;
   letter-spacing: 0.2em;
   position: absolute;
@@ -61,7 +61,7 @@
 }
 .game-container p {
   max-width: 35rem;
-  font-size: var(--font-md);
+  font-size: var(--font-2md);
 }
 
 .game-cards {
@@ -85,7 +85,7 @@
   position: relative;
   overflow: hidden;
   box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
-  transition: transform 0.1s ease-in-out, box-shadow 0.1s ease-in-out;
+  transition: transform 50ms ease, box-shadow 0.1s ease-in-out;
   transform-style: preserve-3d;
 }
 .game-card:hover {
