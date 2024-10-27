@@ -5,6 +5,7 @@
         <link rel="stylesheet" href="./css/HP/hp.css" />
 
         <script src="./js/tilt-animation.js" defer></script>
+        <script src="./js/mobile-menu.js" defer></script>
 
         <link rel="icon" type="image/x-icon" href="./assets/images/favicon.ico" />
         <meta charset="UTF-8" />
@@ -19,11 +20,16 @@
                     <li><a href="#hry">Hry</a></li>
                     <li><a href="#chat">Chat</a></li>
                     <li><a href="#pratele">Přátelé</a></li>
+                    <li><a href="#zebricek">Žebříček</a></li>
                 </ul>
                 <div class="user-card">
                     <p>Roman</p>
                 </div>
-                <button class="burger" style="background: none; border: none; color: white">
+                <button
+                    class="burger"
+                    id="burger"
+                    style="background: none; border: none; color: white"
+                >
                     <svg
                         width="60"
                         height="60"
@@ -39,13 +45,30 @@
                         />
                     </svg>
                 </button>
+
+                <div class="mobile-menu--shadow" id="mobile-menu--shadow"></div>
+                <div class="mobile-menu" id="mobile-menu">
+                    <h1>Duelovky</h1>
+                    <span id="close-btn">X</span>
+
+                    <ul>
+                        <li><a href="#hry">Hry</a></li>
+                        <li><a href="#chat">Chat</a></li>
+                        <li><a href="#pratele">Přátelé</a></li>
+                        <li><a href="#zebricek">Žebříček</a></li>
+                    </ul>
+
+                    <div class="user-card">
+                        <p>Roman</p>
+                    </div>
+                </div>
             </nav>
         </header>
 
         <main>
             <section class="hp-hero">
                 <h1>Duelovky</h1>
-                <h3>Klasické deskové hry, všechny na jednom místě</h3>
+                <h2>Klasické deskové hry, všechny na jednom místě</h2>
                 <video
                     src="./assets/videos/hp-hero-optimised.mp4"
                     loop
@@ -155,35 +178,37 @@
         </main>
 
         <footer>
-            <section class="links">
-                <div class="link-group">
-                    <h4>Populární hry</h4>
-                    <ul>
-                        <li><a href="#">Slovní fotbal</a></li>
-                        <li><a href="#">Horolezci</a></li>
-                        <li><a href="#">Prší</a></li>
-                        <li><a href="#">Chat</a></li>
-                    </ul>
-                </div>
-                <div class="link-group">
-                    <h4>Můj účet</h4>
-                    <ul>
-                        <li><a href="#">Přihlášení</a></li>
-                        <li><a href="#">Registrace</a></li>
-                        <li><a href="#">Přátelé</a></li>
-                        <li><a href="#">Chat</a></li>
-                    </ul>
-                </div>
-                <div class="link-group">
-                    <h4>Kontaktujte nás</h4>
-                    <ul>
-                        <li>+420 630 520 710</li>
-                        <li><a href="#">info@duelovky.cz</a></li>
-                    </ul>
-                </div>
+            <section class="content">
+                <section class="links">
+                    <div class="link-group">
+                        <h4>Populární hry</h4>
+                        <ul>
+                            <li><a href="#">Slovní fotbal</a></li>
+                            <li><a href="#">Horolezci</a></li>
+                            <li><a href="#">Prší</a></li>
+                            <li><a href="#">Chat</a></li>
+                        </ul>
+                    </div>
+                    <div class="link-group">
+                        <h4>Můj účet</h4>
+                        <ul>
+                            <li><a href="#">Přihlášení</a></li>
+                            <li><a href="#">Registrace</a></li>
+                            <li><a href="#">Přátelé</a></li>
+                            <li><a href="#">Chat</a></li>
+                        </ul>
+                    </div>
+                    <div class="link-group">
+                        <h4>Kontaktujte nás</h4>
+                        <ul>
+                            <li>+420 630 520 710</li>
+                            <li><a href="#">info@duelovky.cz</a></li>
+                        </ul>
+                    </div>
+                </section>
                 <div class="spacer"></div>
-                <div class="link-group">
-                    <h4>Narazili jste na bug ?</h4>
+                <div class="bug-form">
+                    <h4 class="form-title">Narazili jste na bug ?</h4>
                     <form>
                         <div class="form-group">
                             <label for="email">E-mail</label>
@@ -193,7 +218,7 @@
                             <label for="bug">Popis bugu</label>
                             <textarea id="bug" name="bug" rows="3"></textarea>
                         </div>
-                        <button class="button secondary">Náhlasit bug</button>
+                        <button class="button secondary full-width">Náhlasit bug</button>
                     </form>
                 </div>
             </section>

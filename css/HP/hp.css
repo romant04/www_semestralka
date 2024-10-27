@@ -26,7 +26,7 @@
   position: relative;
   z-index: 10;
 }
-.hp-hero h3 {
+.hp-hero h2 {
   color: var(--primary-100);
   font-size: 2.25rem;
   max-width: 40vw;
@@ -45,12 +45,47 @@
   transform: translateX(-50%);
 }
 
+@media only screen and (max-width: 1440px) {
+  .hp-hero h1 {
+    font-size: 5rem;
+  }
+  .hp-hero h2 {
+    font-size: 2rem;
+  }
+}
+@media only screen and (max-width: 800px) {
+  .hp-hero {
+    padding-top: 2rem;
+    padding-inline: 3rem;
+  }
+  .hp-hero h1 {
+    font-size: 4rem;
+  }
+  .hp-hero h2 {
+    font-size: 1.75rem;
+    max-width: 60vw;
+  }
+}
+@media only screen and (max-width: 480px) {
+  .hp-hero {
+    padding-top: 1.5rem;
+    padding-inline: 2rem;
+  }
+  .hp-hero h1 {
+    font-size: 3rem;
+  }
+  .hp-hero h2 {
+    font-size: 1.5rem;
+    max-width: 100%;
+  }
+}
+
+
 /*
   HP - GAMES
 */
 .game-container {
-  padding-top: 5rem;
-  padding-inline: 5rem;
+  padding: 5rem;
   scroll-margin-top: -2rem;
   max-width: 90rem;
   margin-inline: auto;
@@ -119,4 +154,49 @@
   display: inline-flex;
   gap: 0.25rem;
   font-size: var(--font-xs);
+}
+
+@media only screen and (max-width: 1440px) {
+  .game-container {
+    padding: 3rem;
+  }
+  .game-cards {
+    grid-template-columns: repeat(2, 23.75rem);
+    column-gap: 2.5rem;
+    row-gap: 2rem;
+  }
+}
+@media only screen and (max-width: 1024px) {
+  .game-container {
+    padding: 2.5rem;
+  }
+  .game-cards {
+    grid-template-columns: repeat(1, 23.75rem);
+  }
+}
+@media only screen and (max-width: 480px) {
+  .game-container {
+    padding: 1.75rem;
+  }
+  .game-container h2 {
+    font-size: var(--font-2lg);
+    font-weight: bold;
+  }
+  .game-container p {
+    max-width: 35rem;
+    font-size: var(--font-md);
+  }
+
+  .game-cards {
+    grid-template-columns: repeat(1, 18.75rem);
+  }
+  .game-card {
+    width: 18.75rem;
+  }
+  .game-card .game-info p {
+    font-size: var(--font-xs);
+  }
+  .game-card h3 {
+    font-size: var(--font-lg);
+  }
 }

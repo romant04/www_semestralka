@@ -27,7 +27,8 @@ h6 {
 
 .button {
   font-size: var(--text-md);
-  width: 17.5rem;
+  max-width: 17.5rem;
+  width: 100%;
   padding-block: 0.5rem;
   text-align: center;
   border: none;
@@ -38,6 +39,9 @@ h6 {
   letter-spacing: 0.05em;
 
   transition: background-color 300ms ease-out;
+}
+.button.full-width {
+  max-width: 100%;
 }
 .button.primary {
   background-color: var(--primary);
