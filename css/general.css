@@ -2,10 +2,11 @@ html,
 body {
   font-family: Nunito, sans-serif;
   height: 100%;
-  overflow: auto;
   scroll-behavior: smooth;
   color: white;
   background-color: var(--bg-primary);
+}
+body {
   overflow-x: hidden;
 }
 
@@ -37,6 +38,7 @@ h6 {
   text-transform: uppercase;
   font-weight: bold;
   letter-spacing: 0.05em;
+  text-decoration: none; /* If we use button as a link */
 
   transition: background-color 300ms ease-out;
 }

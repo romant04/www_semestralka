@@ -4,8 +4,9 @@
 .hp-hero {
   position: relative;
   width: 100%;
-  height: calc(100vh - 5.625rem);
+  height: calc(100vh - 5rem);
   padding-top: 2.5rem;
+  margin-top: 5rem;
   padding-inline: 4.375rem;
 }
 .hp-hero video {
@@ -80,13 +81,11 @@
   }
 }
 
-
 /*
   HP - GAMES
 */
 .game-container {
   padding: 5rem;
-  scroll-margin-top: -2rem;
   max-width: 90rem;
   margin-inline: auto;
 }
@@ -156,7 +155,7 @@
   font-size: var(--font-xs);
 }
 
-@media only screen and (max-width: 1440px) {
+@media only screen and (max-width: 1439px) {
   .game-container {
     padding: 3rem;
   }
