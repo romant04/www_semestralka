@@ -1,11 +1,12 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="cs">
   <head>
     <link rel="stylesheet" href="./css/main.css" />
     <link rel="stylesheet" href="./css/HP/hp.css" />
 
     <script src="./js/tilt-animation.js" defer></script>
     <script src="./js/header.js" defer></script>
+    <script src="./js/auth.js" defer></script>
 
     <link rel="icon" type="image/x-icon" href="./assets/images/favicon.ico" />
     <meta charset="UTF-8" />
@@ -21,20 +22,21 @@
       <nav class="navbar" id="header">
         <h1>Duelovky</h1>
         <ul>
-          <li><a href="#hry">Hry</a></li>
+          <li><a href="/#obsah">Hry</a></li>
           <li><a href="#chat">Chat</a></li>
           <li><a href="#pratele">Přátelé</a></li>
           <li><a href="#zebricek">Žebříček</a></li>
         </ul>
-        <a href="./login.html" class="button primary">Přihlásit se</a>
-        <!-- Show card when user is signed in 
-                     <div class="user-card">
-                        <p>Roman</p>
-                    </div>
-                    -->
+        <div class="auth">
+          <div class="user-card">
+            <p>Roman</p>
+          </div>
+          <a href="./login.html" class="button primary sign-in">Přihlásit se</a>
+        </div>
         <button
           class="burger"
           id="burger"
+          aria-label="burger menu"
           style="background: none; border: none; color: white"
         >
           <svg
@@ -59,17 +61,20 @@
           <span id="close-btn">X</span>
 
           <ul>
-            <li><a href="#hry">Hry</a></li>
+            <li><a href="/#obsah">Hry</a></li>
             <li><a href="#chat">Chat</a></li>
             <li><a href="#pratele">Přátelé</a></li>
             <li><a href="#zebricek">Žebříček</a></li>
           </ul>
 
-          <!-- Show card when user is signed in 
-                     <div class="user-card">
-                        <p>Roman</p>
-                    </div>
-                    -->
+          <div class="auth">
+            <div class="user-card">
+              <p>Roman</p>
+            </div>
+            <a href="./login.html" class="button primary sign-in"
+              >Přihlásit se</a
+            >
+          </div>
         </div>
       </nav>
     </header>

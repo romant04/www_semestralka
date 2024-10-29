@@ -1,6 +1,10 @@
 /*
   HEADER
 */
+body {
+  padding-top: 5rem;
+}
+
 .navbar {
   height: 5.625rem;
   position: fixed;
@@ -22,8 +26,10 @@
   font-weight: bold;
 }
 
-.navbar .button {
-  max-width: 150px;
+.navbar .auth {
+  width: 150px;
+}
+.auth > .button {
   font-size: var(--font-sm);
 }
 
@@ -52,6 +58,9 @@
   width: 120%;
 }
 
+.user-card {
+  display: none;
+}
 .navbar .user-card {
   font-size: var(--font-lg);
 }
@@ -103,7 +112,7 @@
   right: 1.5rem;
   font-size: var(--font-2md);
 }
-.mobile-menu > .user-card {
+.mobile-menu > .auth {
   margin-top: auto;
   margin-inline: auto;
 }
@@ -141,10 +150,7 @@
   .navbar > ul {
     display: none;
   }
-  .navbar > .user-card {
-    display: none;
-  }
-  .navbar > .button {
+  .navbar > .auth {
     display: none;
   }
 

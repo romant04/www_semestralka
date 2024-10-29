@@ -38,7 +38,10 @@ h6 {
   text-transform: uppercase;
   font-weight: bold;
   letter-spacing: 0.05em;
-  text-decoration: none; /* If we use button as a link */
+
+  /* If we use button as a link */
+  text-decoration: none;
+  display: block;
 
   transition: background-color 300ms ease-out;
 }
@@ -58,4 +61,13 @@ h6 {
 }
 .button.secondary:hover {
   background-color: var(--secondary-active);
+}
+
+.button.neutral {
+  background-color: var(--bg-dark);
+  color: white;
+}
+.button.neutral:hover {
+  background-color: var(--bg-primary);
+  color: white;
 }
