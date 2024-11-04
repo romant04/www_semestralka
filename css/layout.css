@@ -26,7 +26,7 @@ body {
   font-weight: bold;
 }
 
-.navbar .auth {
+.navbar .auth .button {
   width: 150px;
 }
 .auth > .button {

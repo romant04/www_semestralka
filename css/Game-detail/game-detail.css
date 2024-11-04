@@ -1,0 +1,50 @@
+main {
+  width: 75%;
+  margin-inline: auto;
+  padding-top: 5rem;
+}
+
+.short-info {
+  display: flex;
+  gap: 2.5rem;
+}
+.short-info img {
+  max-width: 480px;
+  width: 100%;
+  height: auto;
+}
+
+.short-info .perex {
+  display: flex;
+  flex-direction: column;
+  gap: 1.75rem;
+}
+.perex h1 {
+  font-size: var(--font-2lg);
+}
+.perex p {
+  letter-spacing: 0.03em;
+  font-weight: 300;
+}
+.perex .button-group {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  margin-top: auto;
+}
+
+.details {
+  margin-top: 5rem;
+}
+.details h2 {
+  font-size: var(--font-2lg);
+}
+.details h3 {
+  margin-top: 1.25rem;
+}
+.details h4 {
+  margin-top: 0.75rem;
+}
+.details ul {
+  list-style-position: inside;
+}

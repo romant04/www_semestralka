@@ -73,3 +73,5 @@ burger.addEventListener("click", openMobileMenu);
 
 closeButton.addEventListener("click", closeMobileMenu);
 menuShadow.addEventListener("click", closeMobileMenu);
+
+// TODO: When link is selected close menu
