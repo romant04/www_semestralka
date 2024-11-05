@@ -15,3 +15,12 @@ if (userInfo) {
     name.textContent = userInfo.username;
   }
 }
+
+const signOut = document.querySelectorAll(".sign-out");
+
+for (let s of signOut) {
+  s.addEventListener("click", () => {
+    localStorage.setItem("authToken", "");
+    window.location.reload();
+  });
+}

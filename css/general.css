@@ -27,7 +27,6 @@ h6 {
 }
 
 .button {
-  font-size: var(--text-md);
   max-width: 17.5rem;
   width: 100%;
   padding-block: 0.5rem;
@@ -35,8 +34,6 @@ h6 {
   border: none;
   border-radius: 2px;
   cursor: pointer;
-  text-transform: uppercase;
-  font-weight: bold;
   letter-spacing: 0.05em;
 
   /* If we use button as a link */
@@ -45,6 +42,14 @@ h6 {
 
   transition: background-color 300ms ease-out;
 }
+
+.button.primary,
+.button.secondary {
+  text-transform: uppercase;
+  font-size: var(--text-md);
+  font-weight: bold;
+}
+
 .button.full-width {
   max-width: 100%;
 }
@@ -70,4 +75,11 @@ h6 {
 .button.neutral:hover {
   background-color: var(--bg-primary);
   color: white;
+}
+
+.button.transparent {
+  background: none;
+  border: none;
+  font-size: inherit;
+  color: inherit;
 }

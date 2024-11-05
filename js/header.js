@@ -43,9 +43,44 @@ function onScroll(event) {
 
 window.addEventListener("scroll", onScroll);
 
+// Open user detail menu
+const downPopupBtn = document.getElementById("down-popup");
+const downPopup = document.querySelector(".user-popup.down");
+
+const upPopupBtn = document.getElementById("up-popup");
+const upPopup = document.querySelector(".user-popup.up");
+
+let downOpened = false;
+downPopupBtn.addEventListener("click", () => {
+  downOpened = !downOpened;
+
+  if (downOpened) {
+    downPopupBtn.classList.add("active");
+    downPopup.classList.add("active");
+  } else {
+    downPopupBtn.classList.remove("active");
+    downPopup.classList.remove("active");
+  }
+});
+
+let upOpened = false;
+console.log(upPopupBtn);
+upPopupBtn.addEventListener("click", () => {
+  upOpened = !upOpened;
+
+  if (upOpened) {
+    upPopupBtn.classList.add("active");
+    upPopup.classList.add("active");
+  } else {
+    upPopupBtn.classList.remove("active");
+    upPopup.classList.remove("active");
+  }
+});
+
 // Responsive mobile menu
 const menu = document.getElementById("mobile-menu");
 const menuShadow = document.getElementById("mobile-menu--shadow");
+const links = document.querySelectorAll(".navbar a");
 
 const burger = document.getElementById("burger");
 const closeButton = document.getElementById("close-btn");
@@ -74,4 +109,6 @@ burger.addEventListener("click", openMobileMenu);
 closeButton.addEventListener("click", closeMobileMenu);
 menuShadow.addEventListener("click", closeMobileMenu);
 
-// TODO: When link is selected close menu
+for (let link of links) {
+  link.addEventListener("click", closeMobileMenu);
+}

@@ -35,6 +35,7 @@ main {
 
 .details {
   margin-top: 5rem;
+  max-width: 800px;
 }
 .details h2 {
   font-size: var(--font-2lg);
@@ -47,4 +48,45 @@ main {
 }
 .details ul {
   list-style-position: inside;
+}
+
+@media only screen and (max-width: 1439px) {
+  .short-info {
+    flex-direction: column;
+    gap: 1.75rem;
+    max-width: 800px;
+    margin-inline: auto;
+  }
+  .perex .button-group {
+    flex-direction: row;
+  }
+}
+@media only screen and (max-width: 1024px) {
+  .short-info {
+    gap: 1rem;
+  }
+  .perex .button-group {
+    flex-direction: column;
+  }
+  .perex h1 {
+    font-size: var(--font-lg);
+  }
+  .perex p {
+    letter-spacing: 0.01em;
+    font-weight: 300;
+    font-size: var(--font-xs);
+  }
+
+  .details {
+    font-size: var(--font-xs);
+  }
+  .details h2 {
+    font-size: var(--font-lg);
+  }
+  .details h3 {
+    font-size: var(--font-2md);
+  }
+  .details h4 {
+    font-size: var(--font-md);
+  }
 }
