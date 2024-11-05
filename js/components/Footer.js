@@ -14,7 +14,7 @@ class Footer extends HTMLElement {
               <li><a href="./game-detail.html">Slovní fotbal</a></li>
               <li><a href="./game-detail.html">Horolezci</a></li>
               <li><a href="./game-detail.html">Prší</a></li>
-              <li><a href="./game-detail.html">Chat</a></li>
+              <li><a href="./game-detail.html">Lodě</a></li>
             </ul>
           </div>
           <div class="link-group">
