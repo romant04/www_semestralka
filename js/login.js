@@ -20,6 +20,6 @@ if (form !== null) {
         email: email.value,
       })
     );
-    window.location.href = "/";
+    window.location.href = "index.html";
   });
 }
