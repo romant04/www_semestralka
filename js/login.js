@@ -17,7 +17,6 @@ if (form !== null) {
       "authToken",
       JSON.stringify({
         username: username.value,
-        email: email.value,
       })
     );
     window.location.href = "index.html";
