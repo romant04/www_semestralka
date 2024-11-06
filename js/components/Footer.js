@@ -53,7 +53,7 @@ class Footer extends HTMLElement {
       <section class="copyright">
         <h2>Duelovky</h2>
         <div class="socials">
-          <a href="https://www.x.com" data-label="Twitter">
+          <a target="_blank" href="https://www.x.com" data-label="Twitter">
             <svg
               role="img"
               viewBox="0 0 24 24"
@@ -66,7 +66,7 @@ class Footer extends HTMLElement {
               />
             </svg>
           </a>
-          <a href="https://www.youtube.com" data-label="Youtube">
+          <a target="_blank" href="https://www.youtube.com" data-label="Youtube">
             <svg
               role="img"
               viewBox="0 0 24 24"
@@ -79,7 +79,7 @@ class Footer extends HTMLElement {
               />
             </svg>
           </a>
-          <a href="https://www.instagram.com" data-label="Instagram">
+          <a target="_blank" href="https://www.instagram.com" data-label="Instagram">
             <svg
               role="img"
               viewBox="0 0 24 24"
