@@ -10,7 +10,7 @@ main {
   border-radius: 15px;
   display: flex;
   min-height: 400px;
-  width: max(70%, 320px);
+  width: min(max(70%, 320px), 90rem);
 }
 .container > .form-wrapper {
   padding-inline: 3rem;

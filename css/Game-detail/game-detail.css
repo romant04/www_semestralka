@@ -1,5 +1,5 @@
 main {
-  width: 75%;
+  width: min(75%, 90rem);
   margin-inline: auto;
   padding-top: 5rem;
 }
