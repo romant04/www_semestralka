@@ -128,7 +128,7 @@
   align-items: center;
 }
 .game-card {
-  width: 23.75rem;
+  width: min(380px, 100%);
   cursor: pointer;
   position: relative;
   overflow: hidden;
@@ -177,7 +177,7 @@
     padding: 3rem;
   }
   .game-cards {
-    grid-template-columns: repeat(2, 23.75rem);
+    grid-template-columns: repeat(2, 380px);
     column-gap: 2.5rem;
     row-gap: 2rem;
   }
@@ -187,7 +187,7 @@
     padding: 2.5rem;
   }
   .game-cards {
-    grid-template-columns: repeat(1, 23.75rem);
+    grid-template-columns: 1fr;
   }
 }
 @media only screen and (max-width: 480px) {
@@ -203,12 +203,6 @@
     font-size: var(--font-md);
   }
 
-  .game-cards {
-    grid-template-columns: repeat(1, 18.75rem);
-  }
-  .game-card {
-    width: 18.75rem;
-  }
   .game-card .game-info p {
     font-size: var(--font-xs);
   }
@@ -272,16 +266,21 @@
 .vip-card-wrapper::before {
   content: "";
   display: block;
-  background: linear-gradient(
-    90deg,
-    var(--primary) 0%,
-    #dadada 100%
-  );
   height: 600px;
   width: 600px;
   position: absolute;
-  animation: rotate 3s linear infinite;
+  background: linear-gradient(
+    90deg,
+    var(--primary) 0%,
+    #ffffff 100%
+  );
   z-index: 0;
+}
+.vip-card-wrapper:nth-child(odd)::before {
+  animation: rotate 2s linear infinite;
+}
+.vip-card-wrapper:nth-child(even)::before {
+  animation: rotate-backwards 2s linear infinite;
 }
 
 .vip-card {
@@ -354,3 +353,13 @@
     transform: rotate(360deg);
   }
 }
+@keyframes rotate-backwards {
+  from {
+    transform: rotate(360deg);
+  }
+
+  to {
+    transform: rotate(0);
+  }
+}
+

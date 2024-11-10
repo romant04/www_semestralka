@@ -208,6 +208,7 @@ footer .link-group ul {
   flex-direction: column;
   gap: 0.125rem;
 }
+
 footer .link-group a {
   text-decoration: none;
   color: var(--text-gray);
