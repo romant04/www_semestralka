@@ -1,90 +1,86 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <link rel="stylesheet" href="./css/main.css" />
-    <link rel="stylesheet" href="./css/Game-detail/game-detail.css" />
+    <head>
+        <link rel="stylesheet" href="./css/main.css" />
+        <link rel="stylesheet" href="./css/Game-detail/game-detail.css" />
 
-    <script src="./js/header.js" defer></script>
-    <script src="./js/auth.js" defer></script>
+        <script src="./js/header.js" defer></script>
+        <script src="./js/auth.js" defer></script>
 
-    <!-- Components -->
-    <script src="./js/components/Header.js"></script>
-    <script src="./js/components/Footer.js"></script>
+        <!-- Components -->
+        <script src="./js/components/Header.js"></script>
+        <script src="./js/components/Footer.js"></script>
 
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta
-      name="description"
-      content="Hrajte Slovní fotbal na Duelovky! Procvičte si slovní zásobu a vyzvěte přátele na souboj ve hře, kde vítězí ten nejlepší se slovy."
-    />
-    <title>Duelovky | Slovní fotbal</title>
-  </head>
-  <body>
-    <custom-header></custom-header>
+        <link rel="icon" type="image/x-icon" href="./assets/images/favicon.ico" />
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta
+            name="description"
+            content="Hrajte Slovní fotbal na Duelovky! Procvičte si slovní zásobu a vyzvěte přátele na souboj ve hře, kde vítězí ten nejlepší se slovy."
+        />
+        <title>Duelovky | Slovní fotbal</title>
+    </head>
+    <body>
+        <custom-header></custom-header>
 
-    <main>
-      <section class="short-info">
-        <img src="./assets/images/slovni-fotbal.webp" alt="Slovní fotbal" />
-        <div class="perex">
-          <div>
-            <h1>Slovní fotbal</h1>
-            <p>
-              Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nihil
-              odio doloribus nisi ullam in fuga quo commodi rerum labore magni.
-              Autem beatae sequi necessitatibus quibusdam atque voluptatibus
-              similique nisi iure sit excepturi voluptatum molestias, qui neque.
-              Neque quo dolorum aliquid, consequuntur adipisci, doloremque
-              cupiditate quod inventore est aut quos voluptate.
-            </p>
-          </div>
-          <div class="button-group">
-            <button class="button primary">Hrát hned</button>
-            <button class="button secondary">Vyzvat kamaráda</button>
-          </div>
-        </div>
-      </section>
+        <main>
+            <section class="short-info">
+                <img src="./assets/images/slovni-fotbal.webp" alt="Slovní fotbal" />
+                <div class="perex">
+                    <div>
+                        <h1>Slovní fotbal</h1>
+                        <p>
+                            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nihil
+                            odio doloribus nisi ullam in fuga quo commodi rerum labore magni.
+                            Autem beatae sequi necessitatibus quibusdam atque voluptatibus
+                            similique nisi iure sit excepturi voluptatum molestias, qui neque.
+                            Neque quo dolorum aliquid, consequuntur adipisci, doloremque
+                            cupiditate quod inventore est aut quos voluptate.
+                        </p>
+                    </div>
+                    <div class="button-group">
+                        <button class="button primary">Hrát hned</button>
+                        <button class="button secondary">Vyzvat kamaráda</button>
+                    </div>
+                </div>
+            </section>
 
-      <section class="details">
-        <h2>Ovládání a princip hry</h2>
-        <ul>
-          <li>
-            Principem hry je sestavit, co nejvíce slov než uběhne časový limit
-          </li>
-          <li>Časový limit pro hru je 6 minut</li>
-          <li>
-            Výběr písmen kteří hráči mají k dispozici se po 2 minutách mění
-          </li>
-        </ul>
-        <h3>Ovládání</h3>
-        <p>
-          Hra má 2 způsoby ovládání hráč si může vybrat jaký použije, může je
-          dokonce kombinovat
-        </p>
-        <h4>1. Způsob</h4>
-        <ul>
-          <li>
-            Po kliknutí na písmenko z výběru se přidá do středového pole, zde se
-            dá slovo skládat
-          </li>
-          <li>
-            Jakmile hráč složí pole, může pomocí kliknutí na tlačitko
-            “Potvrdit”,slovo odeslat k prozkoumání pokud bude slovo validní
-            získá body, pokud ne body nezíská a bude mu oznámeno proč není slovo
-            validní
-          </li>
-        </ul>
-        <h4>2. Způsob</h4>
-        <ul>
-          <li>
-            Stejně jako u prvního se dají vybírat písmenka do středového pole,
-            ale narozdíl od klikání je možné do středového pole přidávat
-            písmenka pomocí psaní daných znaků na klávesnici.
-          </li>
-          <li>Pro odeslání slova k potvrzení stačí použít klávesu “Enter”</li>
-        </ul>
-      </section>
-    </main>
+            <section class="details">
+                <h2>Ovládání a princip hry</h2>
+                <ul>
+                    <li>Principem hry je sestavit, co nejvíce slov než uběhne časový limit</li>
+                    <li>Časový limit pro hru je 6 minut</li>
+                    <li>Výběr písmen kteří hráči mají k dispozici se po 2 minutách mění</li>
+                </ul>
+                <h3>Ovládání</h3>
+                <p>
+                    Hra má 2 způsoby ovládání hráč si může vybrat jaký použije, může je dokonce
+                    kombinovat
+                </p>
+                <h4>1. Způsob</h4>
+                <ul>
+                    <li>
+                        Po kliknutí na písmenko z výběru se přidá do středového pole, zde se dá
+                        slovo skládat
+                    </li>
+                    <li>
+                        Jakmile hráč složí pole, může pomocí kliknutí na tlačitko
+                        “Potvrdit”,slovo odeslat k prozkoumání pokud bude slovo validní získá
+                        body, pokud ne body nezíská a bude mu oznámeno proč není slovo validní
+                    </li>
+                </ul>
+                <h4>2. Způsob</h4>
+                <ul>
+                    <li>
+                        Stejně jako u prvního se dají vybírat písmenka do středového pole, ale
+                        narozdíl od klikání je možné do středového pole přidávat písmenka
+                        pomocí psaní daných znaků na klávesnici.
+                    </li>
+                    <li>Pro odeslání slova k potvrzení stačí použít klávesu “Enter”</li>
+                </ul>
+            </section>
+        </main>
 
-    <custom-footer></custom-footer>
-  </body>
+        <custom-footer></custom-footer>
+    </body>
 </html>
