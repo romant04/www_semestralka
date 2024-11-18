@@ -12,7 +12,7 @@ class Header extends HTMLElement {
           <li><a href="index.html#obsah">Hry</a></li>
           <li><a href="#chat">Chat</a></li>
           <li><a href="#pratele">Přátelé</a></li>
-          <li><a href="#zebricek">Žebříček</a></li>
+          <li><a href="ladder.html">Žebříček</a></li>
         </ul>
         <div class="auth">
           <div class="user-card">

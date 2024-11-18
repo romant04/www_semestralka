@@ -255,7 +255,7 @@
 
 .vip-card-wrapper {
   position: relative;
-  min-width: 320px;
+  min-width: min(320px, 100%);
   border-radius: 10px;
   height: 300px;
   overflow: hidden;
@@ -269,11 +269,7 @@
   height: 600px;
   width: 600px;
   position: absolute;
-  background: linear-gradient(
-    90deg,
-    var(--primary) 0%,
-    #ffffff 100%
-  );
+  background: linear-gradient(90deg, var(--primary) 0%, #ffffff 100%);
   z-index: 0;
 }
 .vip-card-wrapper:nth-child(odd)::before {
@@ -337,11 +333,6 @@
   .vip > h2::before {
     display: none;
   }
-
-  .vip-card-wrapper {
-    min-width: 250px;
-    max-width: 250px;
-  }
 }
 
 @keyframes rotate {
@@ -362,4 +353,3 @@
     transform: rotate(0);
   }
 }
-

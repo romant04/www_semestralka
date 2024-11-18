@@ -81,7 +81,7 @@ body {
   position: fixed;
   top: 0;
   right: 0;
-  height: 100vh;
+  height: 100dvh;
   width: 60%;
   overflow: hidden;
   pointer-events: none;
