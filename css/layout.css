@@ -336,6 +336,7 @@ footer h2 {
     padding-block: 1.75rem;
     padding-inline: 4rem;
     grid-template-columns: 1fr;
+    gap: 2rem;
   }
   footer .copyright {
     margin-top: 3rem;
@@ -360,5 +361,8 @@ footer h2 {
   }
   footer .link-group {
     width: 10rem;
+  }
+  footer .links {
+    justify-content: flex-start;
   }
 }

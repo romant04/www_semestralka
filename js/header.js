@@ -8,37 +8,34 @@ let scrollFromLastDirectionChange = 0;
 const scrollTolerance = 25;
 
 function onScroll(event) {
-  const { scrollY } = event.currentTarget;
-  const newScrollPosition = Math.max(scrollY, 0);
-  const oldDirection = scrollFromLastDirectionChange < 0 ? "up" : "down";
-  const newDirection = newScrollPosition > scrollPosition ? "down" : "up";
+    const { scrollY } = event.currentTarget;
+    const newScrollPosition = Math.max(scrollY, 0);
+    const oldDirection = scrollFromLastDirectionChange < 0 ? "up" : "down";
+    const newDirection = newScrollPosition > scrollPosition ? "down" : "up";
 
-  if (oldDirection !== newDirection) {
-    scrollFromLastDirectionChange = 0;
-  }
-  scrollFromLastDirectionChange += newScrollPosition - scrollPosition;
-
-  scrollPosition = newScrollPosition;
-
-  if (
-    Math.abs(scrollFromLastDirectionChange) > scrollTolerance &&
-    scrollY > header.offsetHeight &&
-    mobileMenuOpened === false
-  ) {
-    if (scrollFromLastDirectionChange < 0) {
-      header.style.transform = "translateY(0)";
-    } else {
-      header.style.transform = "translateY(-100%)";
+    if (oldDirection !== newDirection) {
+        scrollFromLastDirectionChange = 0;
     }
-  }
+    scrollFromLastDirectionChange += newScrollPosition - scrollPosition;
 
-  // Ensure that there header will always stick to top when we see can see it
-  if (
-    scrollY < header.offsetHeight &&
-    header.style.transform !== "translateY(0)"
-  ) {
-    header.style.transform = "translateY(0)";
-  }
+    scrollPosition = newScrollPosition;
+
+    if (
+        Math.abs(scrollFromLastDirectionChange) > scrollTolerance &&
+        scrollY > header.offsetHeight &&
+        mobileMenuOpened === false
+    ) {
+        if (scrollFromLastDirectionChange < 0) {
+            header.style.transform = "translateY(0)";
+        } else {
+            header.style.transform = "translateY(-100%)";
+        }
+    }
+
+    // Ensure that there header will always stick to top when we see can see it
+    if (scrollY < header.offsetHeight && header.style.transform !== "translateY(0)") {
+        header.style.transform = "translateY(0)";
+    }
 }
 
 window.addEventListener("scroll", onScroll);
@@ -52,29 +49,28 @@ const upPopup = document.querySelector(".user-popup.up");
 
 let downOpened = false;
 downPopupBtn.addEventListener("click", () => {
-  downOpened = !downOpened;
+    downOpened = !downOpened;
 
-  if (downOpened) {
-    downPopupBtn.classList.add("active");
-    downPopup.classList.add("active");
-  } else {
-    downPopupBtn.classList.remove("active");
-    downPopup.classList.remove("active");
-  }
+    if (downOpened) {
+        downPopupBtn.classList.add("active");
+        downPopup.classList.add("active");
+    } else {
+        downPopupBtn.classList.remove("active");
+        downPopup.classList.remove("active");
+    }
 });
 
 let upOpened = false;
-console.log(upPopupBtn);
 upPopupBtn.addEventListener("click", () => {
-  upOpened = !upOpened;
+    upOpened = !upOpened;
 
-  if (upOpened) {
-    upPopupBtn.classList.add("active");
-    upPopup.classList.add("active");
-  } else {
-    upPopupBtn.classList.remove("active");
-    upPopup.classList.remove("active");
-  }
+    if (upOpened) {
+        upPopupBtn.classList.add("active");
+        upPopup.classList.add("active");
+    } else {
+        upPopupBtn.classList.remove("active");
+        upPopup.classList.remove("active");
+    }
 });
 
 // Responsive mobile menu
@@ -86,22 +82,22 @@ const burger = document.getElementById("burger");
 const closeButton = document.getElementById("close-btn");
 
 function openMobileMenu() {
-  menu.style.transform = "translateX(0)";
-  menu.style.pointerEvents = "all";
+    menu.style.transform = "translateX(0)";
+    menu.style.pointerEvents = "all";
 
-  menuShadow.style.opacity = "1";
-  menuShadow.style.pointerEvents = "all";
+    menuShadow.style.opacity = "1";
+    menuShadow.style.pointerEvents = "all";
 
-  mobileMenuOpened = true;
+    mobileMenuOpened = true;
 }
 function closeMobileMenu() {
-  menu.style.transform = "translateX(100%)";
-  menu.style.pointerEvents = "none";
+    menu.style.transform = "translateX(100%)";
+    menu.style.pointerEvents = "none";
 
-  menuShadow.style.opacity = "0";
-  menuShadow.style.pointerEvents = "none";
+    menuShadow.style.opacity = "0";
+    menuShadow.style.pointerEvents = "none";
 
-  mobileMenuOpened = false;
+    mobileMenuOpened = false;
 }
 
 burger.addEventListener("click", openMobileMenu);
@@ -110,5 +106,5 @@ closeButton.addEventListener("click", closeMobileMenu);
 menuShadow.addEventListener("click", closeMobileMenu);
 
 for (let link of links) {
-  link.addEventListener("click", closeMobileMenu);
+    link.addEventListener("click", closeMobileMenu);
 }
