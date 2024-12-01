@@ -100,12 +100,7 @@ function appendTop20(top20, activeGame) {
         row.appendChild(name);
         row.appendChild(mmr);
 
-        setTimeout(() => {
-            row.classList.remove("out");
-            row.classList.add("in");
-            tbody.appendChild(row);
-        }, (pos + 1) * 10);
-
+        tbody.appendChild(row);
         pos++;
     }
 }

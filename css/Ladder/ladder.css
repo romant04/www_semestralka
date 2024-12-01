@@ -90,17 +90,13 @@ tr.in {
 .filters {
     margin-top: 2rem;
     display: flex;
-    justify-content: space-between;
-}
-.filters > div {
-    display: flex;
     flex-direction: column;
     gap: 2px;
 }
 .filters label {
     font-size: var(--font-sm);
 }
-.filters select, input {
+.filters select {
     border: 1px solid var(--text-gray);
     outline: none;
     border-radius: 3px;
