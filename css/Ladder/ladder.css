@@ -90,8 +90,6 @@ tr.in {
 
 .filters {
   margin-top: 2rem;
-  display: flex;
-  justify-content: space-between;
 }
 .filters label {
   font-size: var(--font-sm);
