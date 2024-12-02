@@ -28,6 +28,7 @@ body {
 
 .navbar .auth .button.primary:not(.full-width) {
   width: 150px;
+  font-size: var(--font-sm);
 }
 .navbar .auth .button.transparent {
   display: flex;
@@ -35,9 +36,6 @@ body {
   align-items: center;
   gap: 0.5rem;
   font-size: var(--font-2md);
-}
-.auth > .button {
-  font-size: var(--font-sm);
 }
 
 .navbar > ul {
@@ -71,9 +69,6 @@ body {
 .user-card {
   display: none;
 }
-.navbar .user-card {
-  font-size: var(--font-lg);
-}
 
 .navbar .user-card .user-menu.active > svg {
   transform: rotate(180deg);
@@ -81,13 +76,13 @@ body {
 .user-popup {
   position: absolute;
   width: 300px;
-  padding-block: 1.75rem;
-  padding-inline: 1.25rem;
+  padding-block: 1.5rem;
+  padding-inline: 1rem;
   color: white;
   flex-direction: column;
   gap: 1rem;
   display: none;
-  font-size: var(--font-md);
+  font-size: var(--font-base);
 }
 .user-popup.down {
   top: 4rem;
