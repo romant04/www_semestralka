@@ -1,64 +1,64 @@
 <!DOCTYPE html>
 <html lang="cs">
-    <head>
-        <link rel="stylesheet" href="./css/main.css" />
-        <link rel="stylesheet" href="./css/Ladder/ladder.css" />
+  <head>
+    <link rel="stylesheet" href="./css/main.css" />
+    <link rel="stylesheet" href="./css/Ladder/ladder.css" />
 
-        <script src="./js/header.js" defer></script>
-        <script src="./js/auth.js" defer></script>
-        <script src="./js/table.js" defer></script>
+    <script src="./js/header.js" defer></script>
+    <script src="./js/auth.js" defer></script>
+    <script src="./js/table.js" defer></script>
 
-        <!-- Components -->
-        <script src="./js/components/Header.js"></script>
-        <script src="./js/components/Footer.js"></script>
+    <!-- Components -->
+    <script src="./js/components/Header.js"></script>
+    <script src="./js/components/Footer.js"></script>
 
-        <link rel="icon" type="image/x-icon" href="./assets/images/favicon.ico" />
-        <meta charset="UTF-8" />
-        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <meta
-            name="description"
-            content="Prohlédněte si kdo je na vrcholu žebříčku a zapojte se do souboje o první příčky. Vyberte si hru a ukažte ostatním vaše schopnosti."
-        />
-        <title>Duelovky | Žebříček</title>
-    </head>
-    <body>
-        <custom-header></custom-header>
+    <link rel="icon" type="image/x-icon" href="./assets/images/favicon.ico" />
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Prohlédněte si kdo je na vrcholu žebříčku a zapojte se do souboje o první příčky. Vyberte si hru a ukažte ostatním vaše schopnosti."
+    />
+    <title>Duelovky | Žebříček</title>
+  </head>
+  <body>
+    <custom-header></custom-header>
 
-        <main>
-            <h1>Žebříček 20 nejlepších</h1>
-            <p>
-                Žebříček nejlepších hráčů, kteří aktuálně dominují své kategorii. Každý z nich
-                prokázal své schopnosti a vybojoval si místo na vrcholu, ale otázkou zůstává:
-                jak dlouho se tam udrží?
-            </p>
+    <main>
+      <h1>Žebříček 20 nejlepších</h1>
+      <p>
+        Žebříček nejlepších hráčů, kteří aktuálně dominují své kategorii. Každý
+        z nich prokázal své schopnosti a vybojoval si místo na vrcholu, ale
+        otázkou zůstává: jak dlouho se tam udrží?
+      </p>
 
-            <div class="filters">
-                <label for="game-select">Hra</label>
-                <select name="game-select" id="game-select">
-                    <option value="horolezci">Horolezci</option>
-                    <option value="slovniFotbal">Slovní fotbal</option>
-                    <option value="prsi">Prší</option>
-                    <option value="dama">Dáma</option>
-                    <option value="lode">Lodě</option>
-                </select>
-            </div>
-            <table>
-                <colgroup>
-                    <col />
-                    <col />
-                    <col />
-                </colgroup>
-                <thead>
-                    <tr>
-                        <th>#</th>
-                        <th>Jméno</th>
-                        <th>MMR</th>
-                    </tr>
-                </thead>
-                <tbody></tbody>
-            </table>
-        </main>
+      <div class="filters">
+        <label for="game-select">Hra</label>
+        <select name="game-select" id="game-select">
+          <option value="horolezci">Horolezci</option>
+          <option value="slovniFotbal">Slovní fotbal</option>
+          <option value="prsi">Prší</option>
+          <option value="dama">Dáma</option>
+          <option value="lode">Lodě</option>
+        </select>
+      </div>
+      <table>
+        <colgroup>
+          <col />
+          <col />
+          <col />
+        </colgroup>
+        <thead>
+          <tr>
+            <th>#</th>
+            <th>Jméno</th>
+            <th>MMR</th>
+          </tr>
+        </thead>
+        <tbody></tbody>
+      </table>
+    </main>
 
-        <custom-footer></custom-footer>
-    </body>
+    <custom-footer></custom-footer>
+  </body>
 </html>
