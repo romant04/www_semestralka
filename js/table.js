@@ -262,7 +262,6 @@ function appendTop20(top20, activeGame) {
     row.appendChild(mmr);
 
     tbody.appendChild(row);
-
     pos++;
   }
 }

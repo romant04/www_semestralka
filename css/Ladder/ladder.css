@@ -93,11 +93,6 @@ tr.in {
   display: flex;
   justify-content: space-between;
 }
-.filters > div {
-  display: flex;
-  flex-direction: column;
-  gap: 2px;
-}
 .filters label {
   font-size: var(--font-sm);
 }
