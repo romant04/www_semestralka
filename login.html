@@ -1,59 +1,63 @@
 <!DOCTYPE html>
 <html lang="cs">
-    <head>
-        <link rel="stylesheet" href="./css/main.css" />
-        <link rel="stylesheet" href="./css/Login/login.css" />
+  <head>
+    <link rel="stylesheet" href="./css/main.css" />
+    <link rel="stylesheet" href="./css/Login/login.css" />
 
-        <script src="./js/header.js" defer></script>
-        <script src="./js/login.js" defer></script>
-        <script src="./js/auth.js" defer></script>
+    <script src="./js/header.js" defer></script>
+    <script src="./js/login.js" defer></script>
+    <script src="./js/auth.js" defer></script>
 
-        <!-- Components -->
-        <script src="./js/components/Header.js"></script>
-        <script src="./js/components/Footer.js"></script>
+    <!-- Components -->
+    <script src="./js/components/Header.js"></script>
+    <script src="./js/components/Footer.js"></script>
 
-        <link rel="icon" type="image/x-icon" href="./assets/images/favicon.ico" />
+    <link rel="icon" type="image/x-icon" href="./assets/images/favicon.ico" />
 
-        <meta charset="UTF-8" />
-        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <meta
-            name="description"
-            content="Přihlaste se ke svému účtu na Duelovky a začněte hrát online hry a chatovat."
-        />
-        <title>Duelovky | Přihlášení</title>
-    </head>
-    <body>
-        <custom-header></custom-header>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Přihlaste se ke svému účtu na Duelovky a začněte hrát online hry a chatovat."
+    />
+    <title>Duelovky | Přihlášení</title>
+  </head>
+  <body>
+    <custom-header></custom-header>
 
-        <main>
-            <section class="container">
-                <div class="form-wrapper">
-                    <h1>Přihlásit se</h1>
-                    <form id="auth-form">
-                        <div class="form-group">
-                            <label for="user-email">E-mail / přezdívka</label>
-                            <input id="user-email" name="user-email" type="email" />
-                        </div>
-                        <div class="form-group">
-                            <label for="password">Heslo</label>
-                            <input id="password" name="password" type="password" />
-                        </div>
-                        <button type="submit" class="button primary full-width">
-                            Přihlásit se
-                        </button>
-                    </form>
-                </div>
+    <main>
+      <section class="container">
+        <div class="form-wrapper">
+          <h1>Přihlásit se</h1>
+          <form id="auth-form">
+            <div class="form-group">
+              <label for="username">Přezdívka</label>
+              <input id="username" name="username" type="text" />
+            </div>
+            <div class="form-group">
+              <label for="user-email">E-mail</label>
+              <input id="user-email" name="user-email" type="email" />
+            </div>
+            <div class="form-group">
+              <label for="password">Heslo</label>
+              <input id="password" name="password" type="password" />
+            </div>
+            <button type="submit" class="button primary full-width">
+              Přihlásit se
+            </button>
+          </form>
+        </div>
 
-                <div class="action">
-                    <div>
-                        <h2>Ještě nemáte svůj účet ?</h2>
-                        <p>Vytvořte si ho</p>
-                    </div>
-                    <a href="./register.html" class="button neutral">Registrovat se</a>
-                </div>
-            </section>
-        </main>
+        <div class="action">
+          <div>
+            <h2>Ještě nemáte svůj účet ?</h2>
+            <p>Vytvořte si ho</p>
+          </div>
+          <a href="./register.html" class="button neutral">Registrovat se</a>
+        </div>
+      </section>
+    </main>
 
-        <custom-footer></custom-footer>
-    </body>
+    <custom-footer></custom-footer>
+  </body>
 </html>
